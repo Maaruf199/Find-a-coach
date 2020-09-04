@@ -1,25 +1,26 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from './images/Whisel.png'
 
 function Navigation({ user, logout }) {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
-      <Navbar.Brand href="/">Find a coach</Navbar.Brand>
+      <Navbar.Brand> <img className="nav-logo" src={logo} alt="Logo"/>  </Navbar.Brand>
+      <Navbar.Brand href="/landingpage">Find a coach</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Link className="nav-link" to="/">
-            Home
-          </Link>
-          <Link className="nav-link" to="/item/add">
-            Create Appointment
-          </Link>
-        </Nav>
-
         <Nav>
           {user ? (
             <>
+              <Nav className="mr-auto">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </Nav>
+              <Link className="nav-link" to="/item/add">
+                Create Profile
+              </Link>
               <Nav.Link href="#user">
                 {user.firstname} {user.lastname}
               </Nav.Link>

@@ -53,10 +53,10 @@ export default class Home extends Component {
                   <Card.Body>
                     {item.name}
                     <div>
-                      <Link to={`/item/${item._id}`}>See Item</Link>
+                      <Link to={`/item/${item._id}`}>See Profile</Link>
                       <Button
                         onClick={this.deleteItem}
-                        variant="danger"
+                        variant="outline-danger"
                         id={item._id}
                       >
                         Delete

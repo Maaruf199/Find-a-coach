@@ -10,6 +10,7 @@ import Item from "./component/items/Item";
 import Register from "./component/auth/Register";
 import Login from "./component/auth/Login";
 import Navigation from "./component/Navigation";
+import LandingPage from "./component/LandingPage"
 import Axios from "axios";
 import AddItem from "./component/items/AddItem";
 import { decode } from "jsonwebtoken";
@@ -146,6 +147,13 @@ export default class App extends Component {
             path="/register"
             exact
             render={() => <Register register={this.registerHandler} /> }
+          />
+          <Route
+            path="/landingpage"
+            exact
+            render={() =>
+               <LandingPage />
+            }
           />
           <Route
             path="/login"

@@ -19,7 +19,7 @@ export default class Login extends Component {
   render() {
     return (
       <div>
-        <h1>Login</h1>
+        <h1>Login to add your profile</h1>
         <div>
           <Container>
             <Row>
@@ -39,7 +39,6 @@ export default class Login extends Component {
               />
             </Row>
             <Button variant="primary" block onClick={this.loginHandler}>
-              {" "}
               Login
             </Button>
           </Container>

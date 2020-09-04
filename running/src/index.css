@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.intro-section {
+  min-height: 88vh;
+  background: radial-gradient(rgb(80, 80, 148), rgb(21, 26, 98));
+}
+
+.intro-header {
+  font-weight: bold;
+  color: rgb(184, 165, 124);
+  font-size: 2.6rem;
+}
+
+.nav-logo {
+  width: 50px;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+.coach {
+  width: 130px;
+  padding: 2px;
+  
+}

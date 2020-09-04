@@ -22,7 +22,7 @@ export default class EditItem extends Component {
     let { name, picture, text } = this.state;
     return (
       <div>
-        <h1>Edit Items</h1>
+        <h1>Edit Profile</h1>
         <div>
           <Row>
             <Form.Control
